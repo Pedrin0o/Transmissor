@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmissão de Tela em Grupo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts externos para conexão P2P e WebSockets -->
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <button id="shareBtn">Transmitir Tela</button>
+        <button id="audioBtn" class="disabled" disabled>Desativar Som da Transmissão</button>
+        <button id="linkBtn">Copiar Link da Sala</button>
+    </div>
+    <div id="video-grid"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
